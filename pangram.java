@@ -1,4 +1,4 @@
-// Java program for the above approach
+
 
 class pangram {
 
