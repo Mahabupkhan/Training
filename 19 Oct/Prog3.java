@@ -10,12 +10,10 @@ class Prog3{
 		
 		System.out.println("Enter the target value : ");
 		int target=scan.nextInt();
-		int sum=0;
+		
 		int count=0;
 		for(int i=0;i<size;i++){
-			sum=0;
-			
-			sum=-(arr[i]);
+			int sum=-arr[i];
 			for(int j=0;j<size;j++){
 				if(i!=j)
 				sum+=arr[j];
