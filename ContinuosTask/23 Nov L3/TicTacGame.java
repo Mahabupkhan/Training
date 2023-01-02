@@ -26,7 +26,7 @@ class TicTacGame{
 				if(c==5){
 				flag=1;
 				break;
-			}
+			}  
 			System.out.print("Where to place O : ");
 			char o=(char)(scan.nextInt()+48);
 			placeXO(o,'O');
@@ -37,7 +37,7 @@ class TicTacGame{
 		}while(gameEnd);
 		if(flag!=1)
 		System.out.println("Congratulation!!! "+winner+" have won the game");
-		else
+		else  
 			System.out.println("Match Draw!!!!");
 	}
 	public static void placeXO(char num,char z){
