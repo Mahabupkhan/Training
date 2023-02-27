@@ -1,0 +1,9 @@
+name	age	gender	  phno		             mail		pickup		  drop	      seatno
+
+mabu	21	M	9176589680		mabu@gmail.com		chennai		kanchipuram	u1
+f	18	F	9841614543		mabu@gmail.com		chennai		kanchipurm	u2
+Riyas	18	M	9841614543		riyas@gmail.com		chennai		Kanchipuram	u3
+razak	18	M	9176300735		razak@gmail.com		chennai		kanchipuram	u4
+a	15	F	9841614543		mabu@gmail.com		chennai		kanchipuram	10
+shagul	19	M	7338787164		shagul@gmail.com	chennai		kanchipuram	9
+ameer	25	M	7338787164		ameer@gmail.com		chennai		kanchipuram	u4
