@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Weather WebApplication
+    </title>
+    <head>
+           
+    </head>
+    <style>
+        body{
+            background-color: rgb(217, 210, 200);
+        }
+        input{
+            /* padding-left: 10cm;*/
+            padding-top: 0.3cm;
+           font-size: x-large;
+            
+        }
+        div{
+            padding-top: 1cm;
+            padding-left: 6cm;
+        }
+        head{
+           font-size: 5cm;
+        }
+        label{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1cm;
+        }
+        button{
+         /*padding-right: 3cm;*/
+          padding-top: 0.1cm;
+          font-size: 0.8cm;
+        }
+        img{
+            padding-left: 6.8cm;
+        }
+    </style>
+    <script>
+       async function getCity(){
+            var city=document.getElementById("city").value;
+            var weather;
+            if(city==="Chennai") weather="Sunny";
+            else if(city==="Madurai") weather="Very Hot";
+            else if(city=="KanyaKumari") weather="Cloudy";
+            else weather="Rain";
+            window.alert("There is "+weather+" at "+city);
+           
+        }
+    </script>
+    <body>
+        <div>
+            <img src="weatherLogo4.png" alt="">
+        </div>
+        <div>
+            <label for=""><b>Enter City : </b></label>
+            <input id="city" size="50cm" type="text" >
+            <button style="background-color: violet;" onclick="getCity()">Search for weather</button>
+        </div>
+    </body>
+</html>

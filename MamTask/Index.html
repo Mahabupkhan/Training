@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>login page</title>
+</head>
+<style>
+    input{
+       padding-top: 0.2cm;
+       padding-left: 5cm;
+       font-size: 1cm;
+    }
+    label{
+        font-size: larger;
+        font-size: 1cm;
+    }
+    #name{
+        padding-left: 10cm;
+        padding-top: 4cm;
+    }
+    #password{
+        padding-left: 7.7cm;   
+    }
+    h1{
+        font-size: 2cm;
+        background-color: lightblue;
+    }
+    #submit{
+        padding-top: 2cm;
+        padding-left: 17cm;
+        height: 2cm;
+        width: 8cm;
+    }
+   
+</style>
+<script>
+    function validate(){
+         names=["Aadhil","Mabu","Suthish","Anas","Jameel"];
+         pass=["Adhil1234","Mabu1234","Suthish1234","Anas1234","Jameel1234"];
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("pass").value;     
+        console.log("Name : "+username+"\nPass : "+password);
+        check=false;
+        for(i=0;i<names.length;i++){
+            if(names[i]===username && pass[i]===password){
+                check=true;
+                break;
+            }
+        }
+        if(check)
+            window.alert("Welcome "+username+"...\nSuccessfully loggedIn"); 
+        else
+            window.alert("Wrong Password Or UserName");
+        
+}
+</script>
+<body bgcolor="CornSilk">
+    <form action="">
+        <br>
+        <center><h1 >LOGIN PAGE</h1></center>
+        <div id="name">
+        <label for="Name"><b>NAME : </b></label>
+        <input type="text" placeholder="Enter your name" id="username" >
+        </div>
+        <br>  
+        <br>
+        <div id="password">
+            <label for="Password"><b>PASSWORD : </b></label>
+            <input type="password" placeholder="Enter the password" value="" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="The password must contain 8 characters with atleast 1 upppercase 1 number">
+        </div>
+        <input id="submit" onclick="validate()" type="image" src="submitNew.png">
+    </form>
+
+</body>
+</html>
